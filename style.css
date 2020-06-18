@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 
 body {
 }
@@ -122,7 +123,7 @@ main {
 
 /* choco Image */
 .first-image-section img {
-  margin-top: 20px;
+  margin: 30px 0;
   width: 100%;
   height: auto;
 }
@@ -137,6 +138,4 @@ main {
   line-height: 35px;
 }
 
-.second-image-section{
-    
-}
+
