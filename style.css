@@ -183,31 +183,53 @@ main hr {
 /* The third section */
 
 .third-section {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* background-color: #2196f3; */
+  padding: 10px;
 }
 
-.third-section div img {
-  width: 80px;
+.third-section img {
+  width: 90px;
   height: auto;
+  
+}
+
+.third-section div:first-child {
+  /* background-color: burlywood; */
+ 
+}
+
+.third-section div:nth-child(2){
+  /* background-color: brown; */
+  margin-left: -50px;
+
 }
 
 .third-section div h2 {
   font-family: "Lora", serif;
   font-size: 1.5em;
+  margin-top: 0;
 }
 
 .third-section div p {
   font-family: "Lora", serif;
   font-size: 1.2em;
+  margin-top: -10px;
+  line-height: 30px;
 }
 
-.third-section div button {
+.third-section  button {
   padding: 15px 40px;
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-transform: uppercase;
   font-family: "Cairo", sans-serif;
   background-color: rgb(198, 108, 79);
   border: 0;
   color: #fff;
+  align-self: start;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 0;
+ 
 }
