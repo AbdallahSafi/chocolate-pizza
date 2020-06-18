@@ -1,19 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
 
 body {
 }
 
 /* navbar */
 header {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   padding: 15px 0;
   width: 100%;
 }
 
 nav {
-  padding: 0 200px;
+  padding: 0 150px;
   display: flex;
   justify-content: space-between;
 }
@@ -43,7 +44,6 @@ nav div h1 {
   color: black;
   margin: 0 15px;
   margin-top: -10px;
-
 }
 nav div p {
   font-family: "Cairo", sans-serif;
@@ -52,8 +52,6 @@ nav div p {
   text-transform: uppercase;
   margin: 0 15px;
   margin-top: -10px;
- 
-  
 }
 
 nav ul li {
@@ -75,11 +73,70 @@ nav ul li a img {
   height: auto;
 }
 
-header hr{
-    margin: 30px 200px;
-    background:url(img/hr-img.png);
-    height:20px;
-    border:none !important;
-    
+header hr {
+  margin: 30px 150px;
+  background: url(img/hr-img.png);
+  height: 20px;
+  border: none !important;
 }
 
+/* ----------- MAIN ---------- */
+main {
+  padding: 0 150px;
+}
+
+/* title section */
+.title-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-section div h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3em;
+  margin: 0;
+}
+.title-section div p {
+  text-transform: uppercase;
+  font-family: "Cairo", sans-serif;
+  font-size: 1em;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+
+.title-section aside {
+  align-self: flex-end;
+}
+
+.title-section aside img {
+  width: 15px;
+  height: auto;
+}
+
+.title-section aside p {
+  display: inline;
+  text-transform: uppercase;
+  font-family: "Cairo", sans-serif;
+  font-size: 0.9em;
+}
+
+/* choco Image */
+.first-image-section img {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+}
+
+/* Paragraphes section */
+.paragraphes-section p {
+  font-size: 1.5em;
+  font-family: "Times New Roman", serif;
+  font-weight: 100;
+  text-indent: 40px;
+  margin: 30px 0;
+  line-height: 35px;
+}
+
+.second-image-section{
+    
+}
