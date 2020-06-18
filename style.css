@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap");
 
 body {
 }
@@ -34,14 +36,10 @@ nav div img {
   height: auto;
 }
 
-.logoText {
-  background-color: blueviolet;
-}
 nav div h1 {
-  font-family: "Pacifico", cursive;
-  font-size: 2.5em;
+  font-family: "Yellowtail", cursive;
+  font-size: 2.8em;
   height: fit-content;
-  font-style: italic;
   color: black;
   margin: 0 15px;
   margin-top: -10px;
@@ -141,22 +139,97 @@ main {
 /* list image section */
 .second-image-section {
   position: relative;
-  }
-  .second-image-section img {
+}
+.second-image-section img {
   width: 100%;
   margin-top: 30px;
-  }
-  
-  .second-image-section form {
-  position: absolute;
-  top: 80px;
-  left: 70px;
-  font-size: 1.5em;
-  font-family: "Patrick Hand", cursive;
-  }
-  
-  .second-image-section form input,
-  label {
-  margin: 12px 0;
-  } 
+}
 
+.second-image-section form fieldset:first-child {
+  position: absolute;
+  top: 65px;
+  left: 70px;
+  font-size: 1.7em;
+  font-family: "Patrick Hand", cursive;
+  border: 0;
+}
+
+.second-image-section form fieldset:first-child input,
+label {
+  margin: 10px 0;
+}
+
+.second-image-section form fieldset:nth-child(2) {
+  position: absolute;
+  top: 65px;
+  right: 140px;
+  font-size: 1.7em;
+  font-family: "Patrick Hand", cursive;
+  border: 0;
+}
+
+.second-image-section form fieldset:nth-child(2) input,
+label {
+  margin: 10px 0;
+}
+
+main hr {
+  margin: 50px 0;
+  background: url(img/hr-img.png);
+  height: 20px;
+  border: none !important;
+}
+
+/* The third section */
+
+.third-section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* background-color: #2196f3; */
+  padding: 10px;
+}
+
+.third-section img {
+  width: 90px;
+  height: auto;
+  
+}
+
+.third-section div:first-child {
+  /* background-color: burlywood; */
+ 
+}
+
+.third-section div:nth-child(2){
+  /* background-color: brown; */
+  margin-left: -50px;
+
+}
+
+.third-section div h2 {
+  font-family: "Lora", serif;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.third-section div p {
+  font-family: "Lora", serif;
+  font-size: 1.2em;
+  margin-top: -10px;
+  line-height: 30px;
+}
+
+.third-section  button {
+  padding: 15px 40px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-family: "Cairo", sans-serif;
+  background-color: rgb(198, 108, 79);
+  border: 0;
+  color: #fff;
+  align-self: start;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 0;
+ 
+}
