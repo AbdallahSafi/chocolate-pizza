@@ -138,4 +138,25 @@ main {
   line-height: 35px;
 }
 
+/* list image section */
+.second-image-section {
+  position: relative;
+  }
+  .second-image-section img {
+  width: 100%;
+  margin-top: 30px;
+  }
+  
+  .second-image-section form {
+  position: absolute;
+  top: 80px;
+  left: 70px;
+  font-size: 1.5em;
+  font-family: "Patrick Hand", cursive;
+  }
+  
+  .second-image-section form input,
+  label {
+  margin: 12px 0;
+  } 
 
