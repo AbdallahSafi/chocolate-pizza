@@ -233,3 +233,21 @@ main hr {
   margin-right: 0;
  
 }
+
+
+/* Footer section */
+footer {
+  padding: 30px 140px;
+  display: flex;
+  align-items: center;
+}
+footer span{
+  background-color: blue;
+  height: 1px;
+  width: 100%;
+}
+footer img{
+  width: 80px;
+  height: auto;
+  margin: 10px;
+}
