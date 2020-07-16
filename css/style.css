@@ -1,60 +1,50 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@500;600&display=swap");
 
-body {
-}
-
 /* navbar */
 header {
-  /* position: fixed; */
-  top: 0;
   padding: 15px 0;
   width: 100%;
 }
 
 nav {
-  padding: 0 150px;
-  display: flex;
-  justify-content: space-between;
+  padding: 20px 150px;
+  overflow: hidden;
 }
 
-nav div {
-  margin: auto 0;
-}
-
-nav div a {
-  display: flex;
+#logo {
   text-decoration: none;
-  align-items: center;
-}
-nav div img {
-  width: 50px;
-  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
-nav div h1 {
+nav a img {
+  width: 55px;
+  height: auto;
+  float: left;
+}
+nav span {
+  float: left;
+}
+
+nav a span h1 {
   font-family: "Yellowtail", cursive;
   font-size: 2.8em;
-  height: fit-content;
   color: black;
   margin: 0 15px;
-  margin-top: -10px;
 }
-nav div p {
+nav a span p {
   font-family: "Cairo", sans-serif;
   font-size: 0.8em;
   color: black;
   text-transform: uppercase;
   margin: 0 15px;
-  margin-top: -10px;
 }
 
 nav ul li {
-  display: inline;
   float: right;
 }
 
@@ -74,7 +64,7 @@ nav ul li a img {
 
 header hr {
   margin: 30px 150px;
-  background: url(img/hr-img.png);
+  background: url(../img/hr-img.png);
   height: 20px;
   border: none !important;
 }
@@ -86,25 +76,25 @@ main {
 
 /* title section */
 .title-section {
-  display: flex;
-  justify-content: space-between;
+  overflow: hidden;
 }
 
-.title-section div h2 {
+.title-section span h2 {
   font-family: "Oswald", sans-serif;
   font-size: 3em;
-  margin: 0;
+  margin-bottom: 10px;
 }
-.title-section div p {
+.title-section span p {
   text-transform: uppercase;
   font-family: "Cairo", sans-serif;
-  font-size: 1em;
-  margin-top: -10px;
-  margin-bottom: 0;
+  font-size: 0.9em;
+  display: inline;
+  color: #999;
 }
 
 .title-section aside {
-  align-self: flex-end;
+  float: right;
+  cursor: pointer;
 }
 
 .title-section aside img {
@@ -117,6 +107,7 @@ main {
   text-transform: uppercase;
   font-family: "Cairo", sans-serif;
   font-size: 0.9em;
+  color: #999;
 }
 
 /* choco Image */
@@ -134,7 +125,7 @@ main {
   text-indent: 40px;
   margin: 30px 0;
   line-height: 35px;
-  color: rgb(91, 84, 93);;
+  color: rgb(91, 84, 93);
 }
 
 /* list image section */
@@ -178,7 +169,7 @@ label {
 
 main hr {
   margin: 50px 0;
-  background: url(img/hr-img.png);
+  background: url(../img/hr-img.png);
   height: 20px;
   border: none !important;
 }
@@ -186,29 +177,25 @@ main hr {
 /* The third section */
 
 .third-section {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  /* background-color: #2196f3; */
+  overflow: hidden;
   padding: 10px;
 }
 
 .third-section img {
   width: 90px;
   height: auto;
-  
+  float: left;
 }
 
-
-.third-section div:nth-child(2){
-  
-  margin-left: -50px;
-
+.third-section div:nth-child(2) {
+  float: left;
+  margin-left: 20px;
 }
 
 .third-section div h2 {
   font-family: "Lora", serif;
   font-size: 1.5em;
-  margin-top: 0;
+  margin-bottom: 20px;
   color: rgb(91, 84, 93);
 }
 
@@ -221,7 +208,7 @@ main hr {
   font-weight: 200;
 }
 
-.third-section  button {
+.third-section button {
   padding: 15px 40px;
   font-size: 1.2em;
   text-transform: uppercase;
@@ -234,41 +221,43 @@ main hr {
   margin-left: auto;
   margin-right: 0;
   cursor: pointer;
- 
+  float: right;
 }
-
 
 /* Footer section */
-footer div:first-child{
+footer div:first-child {
   padding: 30px 140px;
-  display: flex;
-  align-items: center;
+  overflow: hidden;
 }
-footer div span{
+footer div span {
   background-color: rgb(91, 84, 93);
-  height: .5px;
-  width: 100%;
-  opacity: .2;
-}
-footer div img{
-  width: 80px;
-  height: auto;
-  margin: 10px;
+  height: 0.5px;
+  width: 47%;
+  opacity: 0.2;
+  float: left;
+  margin-top: 17.5px;
 }
 
-footer div p{
+footer div img {
+  width: 35px;
+  height: auto;
+  float: left;
+  margin: 0 10px;
+}
+
+footer div p {
   text-align: center;
   margin-top: 0;
   font-size: 1.1em;
   font-family: "Lora", serif;
   color: rgb(91, 84, 93);
-  opacity: .5;
+  opacity: 0.5;
 }
 
-footer div:nth-child(2){
- width: fit-content;
- margin-left:  auto;
- margin-right: auto;
- margin-top: 0;
- margin-bottom: 70px;
+footer div:nth-child(2) {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 70px;
 }
